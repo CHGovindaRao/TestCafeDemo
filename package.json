@@ -1,0 +1,17 @@
+{
+  "name": "testautomation",
+  "version": "1.0.0",
+  "description": "Sample test cafe Autometion tests",
+  "main": "index.js",
+  "dependencies": {
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "testcafe": "^1.8.8"
+  },
+  "scripts": {
+    "test": "testcafe chrome sampleTest.js --reporter html:sampleTest.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
