@@ -10,7 +10,12 @@
     "testcafe": "^1.8.8"
   },
   "scripts": {
-    "test": "testcafe chrome sampleTest.js --reporter html:sampleTest.html"
+    "test": "testcafe chrome sampleTest.js",
+    "report": "testcafe chrome sampleTest.js --reporter html:sampleTest.html",
+    "headless": "testcafe \"chrome:headless\" sampleTest.js --reporter html:sampleTest.html",
+    "screenshot": "testcafe chrome sampleTest.js -S -s screenshots",
+    "crossbrowser": "testcafe chrome,firefox sampeTest.js",
+    "sameinstance": "testcafe -c 2 chrome sampleTest.js"
   },
   "author": "",
   "license": "ISC"

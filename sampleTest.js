@@ -16,7 +16,6 @@ test('my sample1 test', async (t) => {
   await t.click(chbx(chbx));
   await t.expect(chbx().checked).ok();
   await t.click(chbx1());
-  await t.expect(chbx1().hasClass().eql(''));
   await t.click(triedTestCafe());
 });
 
